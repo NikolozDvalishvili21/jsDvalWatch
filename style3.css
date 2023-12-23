@@ -1,0 +1,504 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #191919;
+}
+
+a {
+    text-decoration: none;
+}
+
+.SignIn {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+
+.SignIn:after {
+    content: "";
+    position: absolute;
+    background-color: #386EA8;
+    height: 3px;
+    width: 0;
+    margin-top: 28px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.SignIn:hover::after {
+    width: 53px;
+}
+
+.SignUp {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+
+.SignUp:after {
+    content: "";
+    position: absolute;
+    background-color: #386EA8;
+    height: 3px;
+    width: 0;
+    margin-top: 28px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.SignUp:hover::after {
+    width: 60px;
+}
+
+#Box1 {
+    width: 100%;
+    height: 80px;
+    background-color: #212644;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+
+
+.Burger1 {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+
+.RightSide {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.Burger {
+    background-image: url(HeadlinePics/Burger.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.Logo {
+    color: white;
+    cursor: pointer;
+    font-family: 'Koulen', sans-serif;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+
+#Search {
+    background-color: #100F1F;
+    border: none;
+    border-radius: 30px;
+    width: 40%;
+    height: 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+}
+
+.hubb {
+    display: flex;
+    position: absolute;
+    z-index: 1000;
+    color: white;
+    flex-direction: column;
+    left: 10px;
+    display: none;
+}
+
+.lineee {
+    width: 150px;
+    height: 50px;
+    background-color: #0d0d0d;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lineee:hover {
+    background-color: #101010;
+}
+
+.hubb a {
+    color: white;
+    text-decoration: none;
+    font-style: none;
+}
+
+h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.MovieTitle {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.UnderLine {
+    width: 600px;
+    height: 3px;
+    background-color: #386EA8;
+    border-radius: 10px;
+    margin-top: -30px;
+}
+
+.GridCont {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+}
+
+.Profile1 {
+    background-image: url(MoviePagePics/24morgan-freeman1-videoSixteenByNineJumbo1600.jpg);
+    background-size: cover;
+    width: 162px;
+    height: 162px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: #386EA8;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Whole {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 20px;
+}
+
+.Actor1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.Name1 {
+    margin-bottom: -20px; 
+}
+
+.Profile2 {
+    background-image: url(MoviePagePics/MV5BMjUyZDQ0NjktZmM5ZS00NzcxLTliMWYtNWUxNDcyMmExZjU0XkEyXkFqcGdeQXVyMTE1MjA4NzM@._V1_.jpg);
+    background-size: cover;
+    width: 162px;
+    height: 162px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.Actor2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Name2 {
+    margin-bottom: -20px; 
+}
+
+.Profile3 {
+    background-image: url(MoviePagePics/A4fHNLX73EQs78f2G6ObfKZnvp4.jpg);
+    background-size: cover;
+    width: 162px;
+    height: 162px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.Actor3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Name3 {
+    margin-bottom: -20px; 
+}
+
+.Profile4 {
+    background-image: url(MoviePagePics/JamesWhitmore.jpg);
+    background-size: cover;
+    width: 162px;
+    height: 162px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.Actor4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Name4 {
+    margin-bottom: -20px; 
+}
+
+.Review {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.MoviePost {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Pic {
+    background-image: url(MoviePagePics/Shaushanku.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 400px;
+}
+
+.Stars {
+    background-image: url(MoviePagePics/Stars.png);
+    background-size: 100%;
+    width: 400px;
+    height: 65px;
+    margin-top: 10px;
+}
+
+.IMDB {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.Logo9 {
+    background-image: url(MoviePagePics/IMDB.png);
+    width: 91px;
+    height: 85px;
+}
+
+.Rating {
+    color: White;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.Plot {
+    text-align: center;
+}
+
+ul {
+    color: white;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    margin-left: -35px;
+}
+
+.Footer {
+    width: 100%;
+    height: auto;
+    background-color: #212644;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.Logo2 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.rec1 {
+    height: 8px;
+    width: 123px;
+    background-color: white;
+}
+
+.FootLog {
+    font-family: "Koulen", sans-serif;
+    color: white;
+    letter-spacing: 10px;
+    font-size: 45px;
+}
+
+.socials1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    cursor: pointer;
+    /* gap: -227px; */
+    /* margin-top: px; */
+}
+
+.footerPoints {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* cursor: pointer; */
+    gap: 400px;
+    padding-top: 10px;
+    margin-right: 100px;
+}
+
+.flexi {
+    display: flex;
+    align-items: center;
+    /* cursor: pointer; */
+    gap: 15px;
+}
+
+.niger {
+    display: flex;
+    flex-direction: column;
+    /* cursor: pointer; */
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px;
+}
+
+.soc1 img {
+    width: 44px;
+    height: 64px;
+    cursor: pointer;
+    justify-content: flex-start;
+}
+
+.soc2 img {
+    width: 70px;
+    height: 69px;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.soc3 img {
+    width: 68px;
+    height: 68px;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.soc4 img {
+    width: 72px;
+    height: 72px;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.soc5 img {
+    width: 68px;
+    height: 68px;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.socials2 {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: start;
+    cursor: pointer;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.dddd {
+    gap: 35px;
+    display: flex;
+    cursor: pointer;
+}
+
+.links {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 20px;
+    /* cursor: pointer; */
+    font-weight: 600;
+}
+
+.socials1 .links:hover {
+    color: #386EA8;
+    cursor: pointer;
+}
+
+.circ1 {
+    width: 15px;
+    height: 15px;
+    background-color: #386EA8;
+    border-radius: 50%;
+    /* cursor: pointer; */
+}
+
+.Rights {
+    color: #636363;
+    font-family: 'Inter', sans-serif;
+}
+
+.genres-submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%; 
+    background-color: #191919;
+}
+
+.genres-submenu a {
+    display: block; 
+    /* padding: 10px;  */
+    color: white;
+    text-decoration: none;
+}
+
+.genres-link:hover .genres-submenu {
+    display: block;
+}
+
+.lineee2 {
+    width: 150px;
+    height: 50px;
+    background-color: #191919;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    /* gap: 20px; */
+}
+
+.lineee2:hover {
+    background-color: #101010;
+}
+

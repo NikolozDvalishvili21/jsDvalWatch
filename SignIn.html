@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Koulen&display=swap" rel="stylesheet">
+    <title>DVALWATCH</title>
+</head>
+
+<body>
+    <div id="FuncBack" class="flex-container">
+        <div class="Back" id="Back">
+            <div class="Icon">
+                <img src="SignInPic/icons8-arrow-left-50.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="Cover">
+        <div class="Rec">
+            <div class="MainRec">
+                <h1>Sign In</h1>
+
+                <form id="signInForm" action="/">
+                    <div class="input-group">
+                        <div class="field">
+                            <input type="email" name="email" id="email" placeholder="Email..." required>
+                            <div id="emailError" class="error"></div>
+                        </div>
+
+                        <div class="field">
+                            <input type="password" name="password" id="password" placeholder="Password..."
+                                autocomplete="current-password" required>
+                            <div id="passwordError" class="error"></div>
+                        </div>
+
+                        <div class="field">
+                            <button type="button" onclick="validateSignIn()">Sign In</button>
+                            <a href="SignUp.html">
+                                <h4 class="Acc">Create an account</h4>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="emailError" class="error-container"></div>
+    <div id="passwordError" class="error-container"></div>
+
+    <div class="Footer">
+        <div class="Logo2">
+            <div class="rec1"></div>
+            <h1 class="FootLog">DVALWATCH</h1>
+            <div class="rec1"></div>
+        </div>
+
+        <div class="footerPoints">
+            <div class="niger">
+                <div class="flexi">
+                    <div class="circ1"></div>
+                    <p class="links">Contact Us</p>
+                </div>
+                <div class="socials">
+                    <div class="dddd">
+                        <a href="https://www.facebook.com/nika.8.dvalishvili/">
+                            <div class="soc1"><img src="Pictures/FB.png" /></div>
+                        </a>
+                        <a href="https://www.instagram.com/nikadvalishvili21/">
+                            <div class="soc2"><img src="Pictures/IG.png" /></div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nikoloz-dvalishvili-864171293/">
+                            <div class="soc3"><img src="Pictures/Linkedin.png" /></div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="niger">
+                <div class="flexi">
+                    <div class="circ1"></div>
+                    <p class="links">Sources</p>
+                </div>
+                <div class="socials2">
+                    <a href="https://www.imdb.com/">
+                        <div class="soc4"><img src="Pictures/IMMDB.png" /></div>
+                    </a>
+                    <div class="soc5"><img src="Pictures/Google.png" /></div>
+                </div>
+            </div>
+            <div class="niger">
+                <div class="flexi">
+                    <div class="circ1"></div>
+                    <p class="links">Top Genres</p>
+                </div>
+                <div class="socials1">
+                    <p class="links">Drama</p>
+                    <p class="links">Horror</p>
+                    <p class="links">Comedy</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Copyright">
+            <p class="Rights">© All rights reserved. 2023</p>
+        </div>
+    </div>
+
+    <script>
+
+
+        function validateSignIn() {
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var emailError = document.getElementById('emailError');
+            var passwordError = document.getElementById('passwordError');
+
+            emailError.innerHTML = '';
+            passwordError.innerHTML = '';
+
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                emailError.innerHTML = 'Invalid email address';
+                emailError.classList.add('error-message');
+                return;
+            }
+
+            if (password.length < 6) {
+                passwordError.innerHTML = 'Password must be at least 6 characters';
+                passwordError.classList.add('error-message');
+                return;
+            }
+
+            alert('Sign In Successful!');
+        }
+
+        let btnBack = document.querySelector('#Back')
+
+
+        btnBack.addEventListener('click', () => {
+            console.log('Button clicked');
+            window.history.back()
+        })
+    </script>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
